@@ -1,25 +1,20 @@
-import React from "react";
-import { Avatar, Heading, VStack, Flex,Text } from "@chakra-ui/react";
+import { Avatar, Heading, VStack, Flex,Text} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { ReactTyped as Typed } from "react-typed";
-
 const bio1 = "Hi There,";
 const bio2 = "I'm Abdul Basit";
-const greeting = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet aspernatur temporibus minima, dolorum ratione id.";
-
-// Implement the UI for the LandingSection component according to the instructions.
-// Use a combination of Avatar, Heading and VStack components.
 const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
     alignItems="center"
     isDarkBackground
     backgroundColor="#2A4365"
+    color= "red"
   >
     <Flex
   width="100%"
   direction={{ base: "column", md: "row" }}
-  align="stretch"          // both columns stretch full height
+  align="stretch"
   justify="space-between"
   gap={12}
   px={8}
@@ -29,6 +24,7 @@ const LandingSection = () => (
       align="flex-start"
       flex={1}
       spacing={6}
+
       >
         <Heading as="h1" size="3xl">
           {bio1}
@@ -46,16 +42,16 @@ const LandingSection = () => (
         "Exploring AI and modern web technologies",
         "Creating clean, responsive, professional UIs"
   ]}
-  typeSpeed={50}      // typing speed
-  backSpeed={30}      // deleting speed
-  loop                // keep repeating
+  typeSpeed={50}
+  backSpeed={30}
+  loop
 />
 </Text>
       </VStack>
 
       <VStack
     flex={1}
-    align="center"         // centers Avatar vertically
+    align="center"
     justify="center" 
       >
         <Avatar
