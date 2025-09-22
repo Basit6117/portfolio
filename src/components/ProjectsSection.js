@@ -5,15 +5,15 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Tenzies Game",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "A simple yet engaging game built with React: hold and match dice numbers to win in Tenzie. Fun for kids!",
+    getImageSrc: () => require("../images/photo2.jpg"),
   },
   {
-    title: "React Infinite Scroll",
+    title: "Movie Searching App",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "Movie search app where we can search movies and see movies rating etc built with react and tailwind",
     getImageSrc: () => require("../images/photo2.jpg"),
   },
   {

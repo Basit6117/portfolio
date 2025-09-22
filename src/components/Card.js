@@ -20,7 +20,7 @@ const Card = ({ title, description, imageSrc }) => {
         </Text>
           <HStack>
         <Text>
-           See more
+           <a target="blank" href="https://radiant-meringue-151684.netlify.app">Live preview</a>
           </Text>
          <FontAwesomeIcon icon={faArrowRight} size="1x" />
          </HStack>
