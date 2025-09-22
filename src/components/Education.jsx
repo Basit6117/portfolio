@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Image, Badge, Button, VStack, HStack, Text, Heading, background } from "@chakra-ui/react";
+import { Box, Image, VStack, Text, Heading} from "@chakra-ui/react";
 const studies = [
     {
         title: "Bachelor's in Computer Science",
@@ -25,11 +24,14 @@ const Education = () => {
   return (
     <VStack 
     background="#cdea68"
-    // maxWidth="1280px"
+    borderRadius="1.5% 1.5% 0 0"
     minHeight="100vh"   // keeps full height
     width="100%"
-    align="stretch" 
+    align="stretch"
+    textAlign="center" 
+    data-scroll data-scroll-speed="-.3"
     >
+    <Heading>My Education </Heading>
     {
         studies.map((element, index) =>(
     <Box

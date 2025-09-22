@@ -36,8 +36,10 @@ const ProjectsSection = () => {
       backgroundColor="#14532d"
       isDarkBackground
       p={8}
-      alignItems="flex-start"
+      alignItems="center"
       spacing={8}
+      borderRadius="1.5% 1.5% 0 0"
+      data-scroll data-scroll-section data-scroll-speed="0.001"
     >
       <Heading as="h1" id="projects-section">
         Featured Projects

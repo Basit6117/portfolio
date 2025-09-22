@@ -10,6 +10,8 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
     color= "red"
+    data-scroll data-scroll-section  data-scroll-speed="-.2"
+
   >
     <Flex
   width="100%"

@@ -7,13 +7,15 @@ import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 import  Education  from "./components/Education";
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <ChakraProvider>
       <AlertProvider>
-        <main>
           <Header />
+        <main data-scroll-container style={{backgroundColor: "#2A4365"}}>
           <LandingSection />
           <ProjectsSection />
           <Education />
