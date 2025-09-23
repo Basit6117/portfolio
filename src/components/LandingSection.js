@@ -59,8 +59,9 @@ const LandingSection = () => (
         <Avatar
           name="avatar"
           src="profile.jpg"
-          boxSize={{ base: "180px", md: "400px" }}  // bigger & responsive  
-          borderRadius="2xl" 
+          boxSize={{ base: "180px", md: "500px" }}   
+          borderRadius="50%"
+          
         />
       </VStack>
     </Flex>

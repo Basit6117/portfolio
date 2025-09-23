@@ -25,11 +25,11 @@ const Education = () => {
     <VStack 
     background="#cdea68"
     borderRadius="1.5% 1.5% 0 0"
-    minHeight="100vh"   // keeps full height
+    minHeight="100vh"
     width="100%"
     align="stretch"
     textAlign="center" 
-    data-scroll data-scroll-speed="-.3"
+    data-scroll data-scroll-speed="-.1"
     >
     <Heading>My Education </Heading>
     {

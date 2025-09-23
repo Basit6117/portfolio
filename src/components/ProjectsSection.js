@@ -1,6 +1,6 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading,SimpleGrid } from "@chakra-ui/react";
 import Card from "./Card";
 
 const projects = [
@@ -28,6 +28,11 @@ const projects = [
       "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
     getImageSrc: () => require("../images/photo4.jpg"),
   },
+    { title: "Event planner",
+    description:
+      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+    getImageSrc: () => require("../images/photo4.jpg"),
+  },
 ];
 
 const ProjectsSection = () => {
@@ -44,9 +49,14 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
+        {/* <SimpleGrid  columns={{ base: 1, md: 2, lg: 3 }} spacing={6}> */}
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns={{
+         base: "1fr",           
+         md: "repeat(2, 1fr)", 
+         lg: "repeat(3, 1fr)",
+       }}
         gridGap={8}
       >
         {projects.map((project) => (
@@ -58,6 +68,7 @@ const ProjectsSection = () => {
           />
         ))}
       </Box>
+      {/* </SimpleGrid> */}
     </FullScreenSection>
   );
 };
