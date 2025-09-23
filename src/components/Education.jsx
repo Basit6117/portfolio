@@ -37,14 +37,14 @@ const Education = () => {
     <Box
 display="flex"
   flexDirection={{ base: "column", md: "row" }}
-  maxW={{ base: "90%", md: "900px" }}  // increase width
-  w="100%"                             // take full width on small screens
+  maxW={{ base: "90%", md: "900px" }} 
+  w="100%"            
   overflow="hidden"
   borderWidth="1px"
   borderRadius="lg"
   background="white"
   shadow="md"
-  mx="auto"                             // center horizontally
+  mx="auto"
   my={8}            
     >
       {/* Image */}

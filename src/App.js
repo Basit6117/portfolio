@@ -8,6 +8,7 @@ import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 import  Education  from "./components/Education";
 import LocomotiveScroll from 'locomotive-scroll';
+import Skills from "./components/Skills";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -19,6 +20,7 @@ function App() {
           <LandingSection />
           <ProjectsSection />
           <Education />
+          <Skills />
           <ContactMeSection />
           <Footer />
           <Alert />
