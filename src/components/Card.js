@@ -3,13 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-const Card = ({ title, description, imageSrc }) => {
+const Card = ({ title, description, imageSrc,livePreview }) => {
   return(
   
     <ChakraCard  boxShadow="md" borderRadius="lg" overflow="hidden">
        <Image
         src={imageSrc}
-        alt="Green double couch with wooden legs"
+    width="100%"
+    height="200px"   // fixed height
+    objectFit="cover" // makes the image cover the area
+    objectPosition="center" // adjust which part is shown
        />
       <VStack spacing={3}  p={4} align="stretch">
         <Heading>{title}</Heading>
@@ -18,7 +21,7 @@ const Card = ({ title, description, imageSrc }) => {
         </Text>
           <HStack>
         <Text>
-           <a target="blank" href="https://radiant-meringue-151684.netlify.app">Live preview</a>
+           <a target="blank" href={livePreview}>Live preview</a>
           </Text>
          <FontAwesomeIcon icon={faArrowRight} size="1x" />
          </HStack>

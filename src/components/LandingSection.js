@@ -28,7 +28,7 @@ const LandingSection = () => (
       spacing={6}
 
       >
-        <Heading as="h1" size="3xl">
+        <Heading as="h1" size="3xl" id="home-section">
           {bio1}
           <br />
   <Text as="span"color="#63B3ED">

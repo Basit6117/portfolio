@@ -1,6 +1,6 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading,SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
 
 const projects = [
@@ -8,30 +8,35 @@ const projects = [
     title: "Tenzies Game",
     description:
       "A simple yet engaging game built with React: hold and match dice numbers to win in Tenzie. Fun for kids!",
-    getImageSrc: () => require("../images/photo2.jpg"),
+    getImageSrc: () => require("../images/photo11.png"),
+    livePreview: "https://radiant-meringue-151684.netlify.app"
   },
   {
-    title: "Movie Searching App",
+    title: "Movies Searching App",
     description:
       "Movie search app where we can search movies and see movies rating etc built with react and tailwind",
-    getImageSrc: () => require("../images/photo2.jpg"),
+    getImageSrc: () => require("../images/photo2.png"),
+    livePreview: "https://basit6117.github.io/movie-app/"
+
   },
   {
-    title: "Photo Gallery",
+    title: "Assembly Endgame",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-    getImageSrc: () => require("../images/photo3.jpg"),
+      "Assembly Endgame is a fun word-guessing game built with React, where you guess a hidden word within limited attempts using clues.",
+    getImageSrc: () => require("../images/photo3.png"),
+     livePreview: "https://assembly-end-game-word-guess.netlify.app/"
   },
   {
-    title: "Event planner",
+    title: "Jobs Finding module",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
+      "Job Finder Module – Built with React, this module allows users to search and filter jobs by location, type, and other criteria to quickly find the right opportunity.",
+    getImageSrc: () => require("../images/photo4.png"),
+    livePreview: "https://jobs-finding-module.netlify.app/"
   },
     { title: "Event planner",
     description:
       "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
+    getImageSrc: () => require("../images/photo4.png"),
   },
 ];
 
@@ -49,7 +54,6 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
-        {/* <SimpleGrid  columns={{ base: 1, md: 2, lg: 3 }} spacing={6}> */}
       <Box
         display="grid"
         gridTemplateColumns={{
@@ -65,10 +69,10 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            livePreview = {project.livePreview}
           />
         ))}
       </Box>
-      {/* </SimpleGrid> */}
     </FullScreenSection>
   );
 };

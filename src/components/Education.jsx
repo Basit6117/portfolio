@@ -31,7 +31,7 @@ const Education = () => {
     textAlign="center" 
     data-scroll data-scroll-speed="-.1"
     >
-    <Heading>My Education </Heading>
+    <Heading id="about-section">My Education </Heading>
     {
         studies.map((element, index) =>(
     <Box
