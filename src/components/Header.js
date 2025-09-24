@@ -9,15 +9,15 @@ import { Box, Flex, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto:imbasitkh@gmail.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/Basit6117",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/abdul-basit-42a927239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
@@ -52,10 +52,9 @@ const Header = () => {
       alignItems="center"
       flexWrap="wrap"
     >
-      {/* Left-side social icons - hidden on mobile */}
       <HStack spacing={4} display={{ base: "none", md: "flex" }}>
         {socials.map((element, index) => (
-          <a key={index} href={element.url}>
+          <a target="blank" key={index} href={element.url}>
             <FontAwesomeIcon icon={element.icon} size="2x" />
           </a>
         ))}
@@ -71,7 +70,11 @@ const Header = () => {
         <a href="#home-section">Home</a>
         <a href="#about-section">About</a>
         <a href="#skills-section">Skills</a>
-        <a href="#projects-section">Projects</a>
+        <a onClick={(e) => {
+          e.preventDefault();
+          handleClick("projects")(); 
+          }} 
+          href="#projects-section">Projects</a>
         <a href="#contactme-section">Contact</a>
       </HStack>
 

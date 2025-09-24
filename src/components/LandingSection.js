@@ -17,24 +17,27 @@ const LandingSection = () => (
   width="100%"
   direction={{ base: "column", md: "row" }}
   align="stretch"
-  justify="space-between"
-  gap={12}
+  gap={2}
   px={8}
-  py={16}
+  py={25}
     >
       <VStack 
-      align="flex-start"
+     minHeight={{ base: "200px", md: "auto" }}
+       textAlign={{ base: "center", md: "left" }} 
+      align={{ base: "center", md: "flex-start" }} 
+      mt={{ base: 8, md: 0 }}
       flex={1}
       spacing={6}
 
       >
-        <Heading as="h1" size="3xl" id="home-section">
+        <Heading as="h1" fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} 
+          id="home-section">
           {bio1}
           <br />
   <Text as="span"color="#63B3ED">
   {bio2}
 </Text>
-        </Heading>
+        </Heading>        
         <Text fontSize="xl">
         <Typed
     strings={[
@@ -55,12 +58,14 @@ const LandingSection = () => (
     flex={1}
     align="center"
     justify="center" 
+    mt={{ base: 12, md: 0 }}
       >
         <Avatar
           name="avatar"
           src="profile.jpg"
-          boxSize={{ base: "180px", md: "500px" }}   
+          boxSize={{ base: "120px", md: "350px" }}         
           borderRadius="50%"
+           mt={{ base: 8, md: 0 }}
           
         />
       </VStack>

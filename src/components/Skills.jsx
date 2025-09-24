@@ -85,8 +85,8 @@ const Skills = () => {
         </Heading>
        <Grid  
            templateColumns={{
-            base: "1fr",        // mobile → 1 card per row
-            md: "repeat(2, 1fr)" // tablet & large → 2 cards per row
+            base: "1fr",        
+            md: "repeat(2, 1fr)"
             }}
             gap={{ base: 4, md: 6 }}
             justifyContent="center"
@@ -94,7 +94,6 @@ const Skills = () => {
           >
         {
             skills.map((skill) =>(
-
                  <Card
         w="100%"  
         maxW={{ base: "100%", md: "500px", lg: "550px" }} 
