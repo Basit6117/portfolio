@@ -8,7 +8,7 @@ const projects = [
     title: "Tenzies Game",
     description:
       "A simple yet engaging game built with React: hold and match dice numbers to win in Tenzie. Fun for kids!",
-    getImageSrc: () => require("../images/photo11.png"),
+    getImageSrc: () => require("../images/photo1.png"),
     livePreview: "https://radiant-meringue-151684.netlify.app"
   },
   {
@@ -33,10 +33,10 @@ const projects = [
     getImageSrc: () => require("../images/photo4.png"),
     livePreview: "https://jobs-finding-module.netlify.app/"
   },
-    { title: "Event planner",
-    description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.png"),
+  { title: "The World",
+    description:"The World app can help to identify any knowledge about any country through search and different filters",
+    getImageSrc: () => require("../images/photo5.png"),
+    livePreview: "https://countries-details-react.netlify.app"
   },
 ];
 
