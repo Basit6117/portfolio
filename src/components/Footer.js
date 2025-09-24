@@ -11,7 +11,7 @@ const Footer = () => {
           color="white"
           justifyContent="center"
           alignItems="center"
-          maxWidth="1024px"
+          // maxWidth="1024px"
           height={16}
         >
           <p>Abdul Basit • © 2025</p>

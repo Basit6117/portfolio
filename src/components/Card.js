@@ -10,9 +10,9 @@ const Card = ({ title, description, imageSrc,livePreview }) => {
        <Image
         src={imageSrc}
     width="100%"
-    height="200px"   // fixed height
-    objectFit="cover" // makes the image cover the area
-    objectPosition="center" // adjust which part is shown
+    height="200px"   
+    objectFit="cover" 
+    objectPosition="center"
        />
       <VStack spacing={3}  p={4} align="stretch">
         <Heading>{title}</Heading>

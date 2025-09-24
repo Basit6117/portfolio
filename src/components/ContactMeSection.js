@@ -57,7 +57,12 @@ const LandingSection = () => {
       data-scroll data-scroll-speed="-.01"
       borderRadius="1.5% 1.5% 0 0"
     >
-      <VStack w="1024px" p={32} alignItems="center">
+      <VStack 
+        w={{ base: "95vw", md: "90vw", lg: "1024px" }}
+       p={{ base: 4, md: 8, lg: 32 }}
+
+      alignItems="center"
+      >
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>

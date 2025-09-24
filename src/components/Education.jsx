@@ -27,8 +27,10 @@ const Education = () => {
     borderRadius="1.5% 1.5% 0 0"
     minHeight="100vh"
     width="100%"
-    align="stretch"
-    textAlign="center" 
+  align="stretch"
+  textAlign="center"
+  py={{ base: 8, md: 16 }}
+  px={{ base: 4, md: 8 }}
     data-scroll data-scroll-speed="-.1"
     >
     <Heading id="about-section">My Education </Heading>
@@ -36,9 +38,9 @@ const Education = () => {
         studies.map((element, index) =>(
     <Box
 display="flex"
-  flexDirection={{ base: "column", md: "row" }}
-  maxW={{ base: "90%", md: "900px" }} 
-  w="100%"            
+      flexDirection={{ base: "column", md: "row" }}
+      maxW={{ base: "100%", md: "900px" }}
+      w="100%"           
   overflow="hidden"
   borderWidth="1px"
   borderRadius="lg"
