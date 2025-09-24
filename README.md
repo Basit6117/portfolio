@@ -30,7 +30,7 @@ It is designed to showcase my **skills, education, and projects** as a Software 
  
 
 **Live Demo:**  
-👉 [will add later]
+👉 [(https://personal-pertfolio.netlify.app/)]
 
 ---
 
